@@ -15,12 +15,7 @@ export function BestTraders() {
   useEffect(() => {
     const randomTraders = [...getRandomTraders()]
 
-    setTraders(
-      randomTraders
-        .sort(() => 0.5 - Math.random())
-        .slice(0, 4)
-        .sort((a, b) => b.monthlyProfit - a.monthlyProfit)
-    )
+    setTraders(randomTraders)
     setActiveTrader(0)
   }, [])
 
