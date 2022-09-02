@@ -1,0 +1,54 @@
+.trader-card {
+    font-size: 16px;
+    font-weight: 500;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 16px;
+
+    border-radius: 25px;
+
+    transition: var(--base-transition);
+}
+
+.trader-card.trader-card-active {
+    background-color: var(--color-gray-50);
+}
+
+.trader-icon {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+.trader-name {
+    margin-bottom: 4px;
+}
+
+.trader-growth {
+    color: var(--color-green);
+}
+
+@media (min-width: 360px) {
+    .trader-card {
+        font-size: 20px;
+        line-height: 28px;
+
+        padding: 20px 28px;
+
+        cursor: pointer;
+    }
+
+    .trader-card:active {
+        background-color: var(--color-gray-50);
+    }
+
+    .trader-icon {
+        width: 48px;
+        height: 48px;
+    }
+}

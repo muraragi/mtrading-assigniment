@@ -1,0 +1,22 @@
+.best-traders {
+    padding: 18px 16px;
+    width: 100%;
+}
+
+.traders-list {
+    align-self: center;
+}
+
+@media (min-width: 360px) {
+    .best-traders {
+        padding: 0;
+        margin: 0 auto;
+        max-width: 1180px;
+    }
+
+    .traders {
+        display: grid;
+        grid-template-columns: 295px 1fr;
+        column-gap: 29px;
+    }
+}

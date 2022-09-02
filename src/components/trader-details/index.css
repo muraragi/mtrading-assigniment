@@ -1,0 +1,42 @@
+.trader-details {
+    padding: 20px 24px 24px;
+
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+}
+
+.trader-details-header {
+    margin-bottom: 24px;
+}
+
+.trader-details-fields {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 36px;
+
+    margin-top: 20px;
+}
+
+.trader-details-chart {
+    height: 100%;
+    width: 100%;
+    min-height: 90px;
+    margin-bottom: 32px;
+}
+
+@media (min-width: 360px) {
+    .trader-details {
+        padding: 28px 24px 24px;
+    }
+
+    .trader-details-fields {
+        column-gap: 56px;
+
+        margin-top: 0;
+    }
+
+    .trader-details-chart {
+        margin-bottom: 0;
+    }
+}

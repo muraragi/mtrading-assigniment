@@ -1,0 +1,36 @@
+button {
+    appearance: none;
+
+    transition: var(--base-transition);
+
+    padding: 16px 0;
+    width: 100%;
+
+    border-radius: 6px;
+    border: none;
+
+    background-color: var(--color-purple-400);
+
+    font-family: var(--font-primary), sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-white);
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-purple-600);
+}
+
+button:active {
+    background-color: var(--color-purple-900);
+}
+
+@media (min-width: 360px) {
+    button {
+        max-width: 225px;
+    }
+}
+

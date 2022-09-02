@@ -35,11 +35,26 @@
 
 :root {
   --font-primary: "Roboto";
+  --font-secondary: "GothamPro";
 
-  font-family: var(--font-primary), Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  --color-header: #0A071E;
+  --color-border: #E8EAED;
+
+  --color-white: #FFFFFF;
+
+  --color-gray-active: #C8C8D5;
+  --color-gray-50: #F5F7F9;
+  --color-gray-300: #D9D9D9;
+  --color-gray-500: #81818D;
+  --color-gray-900: #080816;
+
+  --color-green: #34B428;
+
+  --color-purple-400: #8A24F3;
+  --color-purple-600: #701BC8;
+  --color-purple-900: #4F118F;
+
+  --base-transition: all 0.2s ease;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -48,7 +63,42 @@
   -webkit-text-size-adjust: 100%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
+
+  font-family: var(--font-primary);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--color-gray-900);
 }
+
+h1 {
+  font-family: var(--font-secondary), sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
+  color: var(--color-header);
+
+  margin: 0 0 20px 0;
+}
+
+@media (min-width: 360px) {
+  h1 {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 82px;
+
+    margin: 0 0 28px 0;
+  }
+
+  body {
+    padding-top: 48px;
+  }
+}
+

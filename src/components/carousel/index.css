@@ -1,0 +1,24 @@
+.carousel {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+
+    margin-top: 20px;
+}
+
+.carousel-item {
+    width: 8px;
+    height: 8px;
+
+    border-radius: 26px;
+
+    background-color: var(--color-gray-300);
+
+    transition: var(--base-transition);
+}
+
+.carousel-item.carousel-item-active {
+    width: 20px;
+
+    background-color: var(--color-gray-active);
+}
