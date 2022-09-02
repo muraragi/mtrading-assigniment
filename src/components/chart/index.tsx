@@ -1,6 +1,6 @@
 import './index.css'
 
-import { createChart, LineData, PriceScaleMode } from 'lightweight-charts'
+import { createChart, LineData } from 'lightweight-charts'
 
 import { useEffect, useRef } from 'react'
 
@@ -15,6 +15,7 @@ export function Chart({ chartPoints }: ChartProps) {
     if (chartContainerRef.current) {
       const chart = createChart(chartContainerRef.current, {
         width: chartContainerRef.current.clientWidth,
+        height: chartContainerRef.current.clientHeight,
         timeScale: {
           borderColor: '#DDE0E9'
         },
@@ -49,7 +50,10 @@ export function Chart({ chartPoints }: ChartProps) {
       })
 
       const handleResize = () => {
-        chart.applyOptions({ width: chartContainerRef.current?.clientWidth })
+        chart.applyOptions({
+          width: chartContainerRef.current?.clientWidth,
+          height: chartContainerRef.current?.clientHeight
+        })
       }
 
       const areaSeries = chart.addLineSeries({
