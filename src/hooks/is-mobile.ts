@@ -5,7 +5,7 @@ export function useIsMobile(): boolean {
 
   useEffect(() => {
     function handleResize() {
-      setIsMobile(window.screen.width < 360)
+      setIsMobile(window.screen.width < 600)
     }
 
     window.addEventListener('resize', handleResize)

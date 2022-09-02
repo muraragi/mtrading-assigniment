@@ -25,7 +25,7 @@
     margin-bottom: 32px;
 }
 
-@media (min-width: 360px) {
+@media (min-width: 600px) {
     .trader-details {
         padding: 28px 24px 24px;
     }

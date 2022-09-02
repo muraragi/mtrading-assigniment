@@ -28,7 +28,7 @@ button:active {
     background-color: var(--color-purple-900);
 }
 
-@media (min-width: 360px) {
+@media (min-width: 600px) {
     button {
         max-width: 225px;
     }
